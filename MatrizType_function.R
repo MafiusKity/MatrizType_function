@@ -6,14 +6,14 @@ MatrizType<-function(X){
   #X is the matriz
   
   #Checking if the matriz is a line:
-  n_coll<-length(X[,1])
-  if(n_coll==1){
+  n_row<-length(X[,1])
+  if(n_row==1){
     print("The matriz is a line")
   }
   
   #Checking if matriz is a colune:
-  length(X[1,])->n_row
-  if(n_row==1){
+  length(X[1,])->n_coll
+  if(n_coll==1){
     print("The matriz is a colune")
   }
   
